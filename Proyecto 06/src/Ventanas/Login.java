@@ -28,7 +28,7 @@ public class Login extends JFrame {
 	//No crea un nuevo objeto de la clase Login, sino una etiqueta de referencia a un objeto tipo login
 	private Login referencia;
 	//Permitir acceso desde esta ventana, Login, a otra, Juego, pasandola como referencia
-	private Juego ventana_Juego;
+	private VentanaPrincipal ventana_Juego;
 	//Generamos un nuevo jugador
 	private Jugador player1=new Jugador();
 	
@@ -37,7 +37,7 @@ public class Login extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Login(Juego vJ) {
+	public Login(VentanaPrincipal vJ) {
 		
 		//referencia se asocia al objeto creado que es tipo login.
 		referencia=this;
@@ -186,7 +186,7 @@ public class Login extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		//Mostrar la otra ventana
-		ventana_Juego=new Juego();
+		ventana_Juego=new VentanaPrincipal();
 		
 	}
 }

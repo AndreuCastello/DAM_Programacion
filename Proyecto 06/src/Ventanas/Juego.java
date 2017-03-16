@@ -24,7 +24,7 @@ import javax.swing.JTextField;
 //JPanel que incluira todo l onecesario para jugar
 //Se colocara en el JFrame VentanaPrincipal
 
-public class Juego extends JFrame {
+public class Juego extends JPanel {
 	//Paneles generales
 	private JPanel contentPane;
 	
@@ -73,11 +73,12 @@ public class Juego extends JFrame {
 	public Juego() {
 		
 		//Panel principal
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1200, 675);
-		contentPane = new JPanel();
+		
+		contentPane = this; //new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
+		//setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		//Dados, cofiguracion general
